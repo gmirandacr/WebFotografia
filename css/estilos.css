@@ -36,13 +36,13 @@ h2{
 
 a:link{
   color: white;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:visited{
   color: white;
 }
 a:active{
-  text-decoration: none;
+  text-decoration:none;
 }
 a:hover{
   color:red;
@@ -56,14 +56,20 @@ a:hover{
   padding: 20px;
 }
 
-[class*="col-"]{
-  float:left;
-}
-
 #imagen_secundaria{
   padding: 20px;
   background-color: #d5c75f;
   border: 1px;
+}
+
+#galeria{
+  padding: 20px;
+  background-color: #d5c75f;
+  border: 1px;
+}
+
+[class*="col-"]{
+  float:left;
 }
 
 .menu ul{
@@ -80,7 +86,7 @@ a:hover{
 
 }
 
-.imagen_principal{
+.imgs{
   width: 100%;
 }
 
@@ -137,8 +143,24 @@ a:hover{
     text-align: right;
   }
 
+  #galeria{
+    width: 33,33%;
+  }
+
   #imagen_secundaria{
     display: inline-flex;
+  }
+
+  #galeria{
+    display: -webkit-flex;
+    display: inline-flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  #galeria{
+    display: -webkit-flex;
+    display: flex;
   }
 
   .info_footer{
