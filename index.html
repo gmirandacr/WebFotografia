@@ -11,10 +11,10 @@
   <body>
     <div id="contenido">
       <div id=header class="row">
-        <div class="col-8">
+        <div class="titulo">
           <h1>Comenzando con la fotografía</h1>
         </div>
-        <div class="col-4 menu">
+        <div class="menu">
           <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="paisajes.html">Paisajes</a></li>
@@ -23,37 +23,47 @@
         </div>
       </div>
 
-      <section id="imagen_central">
-        <img src="images/img_ppal_640x300.jpg" alt="Imagen de fotografia" width="90%">
-      </section>
+      <div id="imagen_central">
+        <figure>
+          <img class="imagen_principal" src="images/img_ppal_640x300.jpg" alt="Imagen de fotografia">
+        </figure>
+      </div>
       <div id= "imagen_secundaria">
-        <div class="">
-            <img src="images/utah-mountain-sky-nature-51373.jpeg" alt="Montañas de Utah" width="90%">
-        </div>
-        <div class="">
-            <img src="images/retrato.jpg" alt="Retratos" width="90%">
-        </div>
+        <figure>
+            <img class="imagen_principal img_paisajes" src="images/utah-mountain-sky-nature-51373.jpeg" alt="Montañas de Utah">
+            <figcaption class="caption"><a href="paisajes.html">Paisajes</a></figcaption>
+        </figure>
+          <figure>
+            <img class="imagen_principal img_retrato" src="images/retrato.jpg" alt="Retratos">
+            <figcaption class="caption"><a href="retratos.html">Retratos</a></figcaption>
+          </figure>
       </div>
 
 
       <footer>
-        <div class="">
-          <a href="mailto:geo.mirandaa@gmail.com?subject=feedback">Envía un email</a>
-          <p>Teléfono: (506)88888888</p>
-          <p>Alajuela, Costa Rica</p>
+        <div id="footer" class="row">
+          <div class="info_footer">
+            <h2>Contacto</h2>
+            <a href="mailto:geo.mirandaa@gmail.com?subject=feedback">geo.mirandaa@gmail.com</a>
+            <p>Teléfono: (506)88888888</p>
+            <p>Alajuela, Costa Rica</p>
+          </div>
+          <div class="info_footer">
+            <h2>Términos</h2>
+            <p>Conoce nuestros términos y condiciones...</p>
+          </div>
+          <div class="info_footer">
+            <h2>Redes Sociales</h2>
+            <p><img class="img_redes" src="images/facebook.ico" alt="Facebook">Comenzando Fotografía</p>
+            <p><img class="img_redes" src="images/instagram.ico" alt="Instagram">Comenzando Fotografía</p>
+            <p><img class="img_redes" src="images/twitter.ico" alt="Twitter">Comenzando Fotografía</p>
+          </div>
+          <div class="info_footer">
+            <h2>Derechos</h2>
+            <p>Geovanna Miranda &copy; 2017</p>
+          </div>
         </div>
-        <div class="">
-          <p>Políticas de uso y privacidad</p>
-        </div>
-        <div class="">
-          <p>Redes sociales</p>
-          <img src="images/facebook.ico" alt="Facebook">
-          <img src="images/instagram.ico" alt="Instagram">
-          <img src="images/twitter.ico" alt="Twitter">
-        </div>
-        <div class="">
-          <p>Derechos: Geovanna Miranda &copy; 2017</p>
-        </div>
+
       </footer>
     </div>
 

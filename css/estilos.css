@@ -8,9 +8,16 @@ body{
   background-color: #5b7989;
   color: white;
   border-radius: 10px 10px 0px 0px;
+  text-align: center;
 }
 
-#contenedor::after,#contenedor::before,.row::after,.row::before {
+#footer{
+  width: inherit;
+  border-radius: 0px 0px 10px 10px;
+  background-color: #c6d5c5;
+}
+
+.row::after,.row::before {
   content:"";display:table;clear:both
 }
 
@@ -23,20 +30,10 @@ h1{
   text-shadow: 2px 2px #02010a;
 }
 
-.menu ul{
-  list-style-type: none;
-  font-size: 22px;
-  text-decoration: none !important;
-  text-align: right;
-  overflow: hidden;
-  padding: 5px;
-  word-spacing: 10px;
+h2{
+  text-decoration-style: double;
 }
 
-.menu li{
-  display: inline;
-  text-decoration: none !important;
-}
 a:link{
   color: white;
   text-decoration: none;
@@ -61,14 +58,47 @@ a:hover{
 
 [class*="col-"]{
   float:left;
-  width:100%;
 }
 
 #imagen_secundaria{
-  display: inline-flex;
   padding: 20px;
   background-color: #d5c75f;
   border: 1px;
+}
+
+.menu ul{
+  list-style-type: none;
+  font-size: 22px;
+  text-decoration: none !important;
+  overflow: hidden;
+  padding: 5px;
+  word-spacing: 10px;
+}
+
+.menu li{
+  display: inline;
+
+}
+
+.imagen_principal{
+  width: 100%;
+}
+
+.img_paisajes:hover{
+    transform: rotate(10deg);
+    box-shadow: 2px #82c3a6;
+    border: 2px solid black;
+}
+
+.img_retrato:hover{
+  transform: translate(20px,-5px);
+  box-shadow: 2px #82c3a6;
+  border: 2px solid black;
+}
+
+
+.caption{
+  text-align: center;
 }
 
 .col-1 {width: 8.33%;}
@@ -83,3 +113,48 @@ a:hover{
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+.img_redes{
+  width: 100%;
+  max-width: 30px;
+  vertical-align: middle;
+}
+
+
+
+/*desktop*/
+@media (min-width:720px) {
+  #contenido {width: 90%;}
+
+  .titulo{
+    width: 66.66%;
+    float: left;
+    text-align: left;
+  }
+  .menu{
+    width: 33.33%;
+    float:left;
+    text-align: right;
+  }
+
+  #imagen_secundaria{
+    display: inline-flex;
+  }
+
+  .info_footer{
+    width: 25%;
+    float: left;
+    padding: 20px;
+  }
+
+}/*media desktop*/
+
+/*movil*/
+@@media (max-width:420px) {
+  #contenido {width: 100%}
+
+  .img_redes{
+      max-width: 10px !important;
+  }
+
+}/*media movil*/
