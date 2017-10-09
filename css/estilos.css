@@ -1,6 +1,7 @@
 body{
   background-color: #02010a;
   font-family: 'Dancing Script';
+  color: white;
 }
 
 #header{
@@ -55,11 +56,19 @@ a:hover{
 #imagen_central{
   text-align: center;
   background-color: #82c3a6;
+  padding: 20px;
 }
 
 [class*="col-"]{
   float:left;
   width:100%;
+}
+
+#imagen_secundaria{
+  display: inline-flex;
+  padding: 20px;
+  background-color: #d5c75f;
+  border: 1px;
 }
 
 .col-1 {width: 8.33%;}
