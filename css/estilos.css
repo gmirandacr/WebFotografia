@@ -1,7 +1,7 @@
 body{
   background-color: #02010a;
   font-family: 'Dancing Script';
-  color: white;
+  color:black;
 }
 
 #header{
@@ -17,39 +17,7 @@ body{
   background-color: #c6d5c5;
 }
 
-.row::after,.row::before {
-  content:"";display:table;clear:both
-}
-
-*{
-  box-sizing: border-box;
-}
-
-
-h1{
-  text-shadow: 2px 2px #02010a;
-}
-
-h2{
-  text-decoration-style: double;
-}
-
-a:link{
-  color: white;
-  text-decoration: underline;
-}
-a:visited{
-  color: white;
-}
-a:active{
-  text-decoration:none;
-}
-a:hover{
-  color:red;
-}
-
-
-/* NOTE: imagen central */
+/*imagen central */
 #imagen_central{
   text-align: center;
   background-color: #82c3a6;
@@ -63,10 +31,36 @@ a:hover{
 }
 
 #galeria{
-  padding: 20px;
   background-color: #d5c75f;
   border: 1px;
 }
+
+#galeria ul{
+  align-items: left;
+  text-align: left;
+}
+
+.row::after,.row::before,#galeria::before,#galeria::after {
+  content:"";display:table;clear:both
+}
+
+*{
+  box-sizing: border-box;
+}
+
+h1{
+  text-shadow: 2px 2px #02010a;
+}
+
+h2{
+  text-decoration-style: double;
+}
+
+a:visited{
+  color: white;
+}
+
+
 
 [class*="col-"]{
   float:left;
@@ -83,11 +77,43 @@ a:hover{
 
 .menu li{
   display: inline;
-
 }
 
 .imgs{
   width: 100%;
+}
+
+.item.imgs:first-of-type{
+  -webkit-filter:blur(10px);
+  filter: blur(10px);
+}
+#galeria ul
+{
+  list-style-type: none;
+  font-size: 22px;
+  text-decoration: none !important;
+  overflow: hidden;
+  padding: 5px;
+  word-spacing: 10px;
+}
+
+#galeria ul li{
+
+}
+
+#galeria ul li:first-child{
+  -webkit-filter:blur(10px);
+  filter: blur(10px);
+}
+
+#galeria ul li:nth-child(2), ul li:nth-child(4), ul li:nth-child(6){
+  -webkit-filter:grayscale(100%);;
+  filter: grayscale(100%);
+}
+
+#galeria ul li:nth-child(3){
+  -webkit-filter:sepia(90%);
+  filter: sepia(90%);
 }
 
 .img_paisajes:hover{
@@ -102,9 +128,9 @@ a:hover{
   border: 2px solid black;
 }
 
-
 .caption{
   text-align: center;
+  color: black !important;
 }
 
 .col-1 {width: 8.33%;}
@@ -143,25 +169,20 @@ a:hover{
     text-align: right;
   }
 
-  #galeria{
-    width: 33,33%;
-  }
 
   #imagen_secundaria{
     display: inline-flex;
   }
 
   #galeria{
-    display: -webkit-flex;
-    display: inline-flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
+    float: left;
+    padding: 20px;
   }
 
-  #galeria{
-    display: -webkit-flex;
-    display: flex;
-  }
+  #galeria ul li{
+      width: 33.33%;
+      float: left;
+    }
 
   .info_footer{
     width: 25%;
